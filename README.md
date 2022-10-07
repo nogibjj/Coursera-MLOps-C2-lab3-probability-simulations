@@ -1,38 +1,38 @@
-[![CI](https://github.com/nogibjj/mlops-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/mlops-template/actions/workflows/cicd.yml)
-[![Codespaces Prebuilds](https://github.com/nogibjj/mlops-template/actions/workflows/codespaces/create_codespaces_prebuilds/badge.svg)](https://github.com/nogibjj/mlops-template/actions/workflows/codespaces/create_codespaces_prebuilds)
 
-## Template for MLOPs projects
 
-Things included are:
+## Tasks
 
-* `Makefile`
+A.  Simulate a career earnings vs investor portfolio
 
-* `Pytest`
+1.  Run the `./startup.py` simulator and explore how each command works.
 
-* `pandas`
+```bash
+Usage: startup_game.py [OPTIONS] COMMAND [ARGS]...
 
-* `Pylint`
+  Startup Game Simulator
 
-* `Dockerfile`
+Options:
+  --help  Show this message and exit.
 
-* `GitHub copilot`
+Commands:
+  sanity             Sanity test the simulation with a small number of...
+  simulate           Simulate a startup career
+  simulate_multiple  Simulate a startup career for multiple people
+  vcportfolio        Simulate a venture capitalist investing in a...
+```
 
-* `jupyter` and `ipython` 
+2.  Create your own VC portfolio using `vcportfolio` and startup career using `simulate_multiple`.
+* Reflection question:  What did you learn about the payoff for a regular employee vs. an investor?  
+* Reflection question:  Why are simulations important first modeling steps?
 
-* Most common Python libraries for ML/DL and Hugging Face
+B. Determine if roulette wheels have patterns that a simulation can determine by running the following command
 
-* `githubactions` 
+`./roulette.py spin --count 10 --color red --bet 1`
 
-### Used in Following Projects
+* Reflection question:  Is it is wise to bet a large bet on red if you see the roulette wheel hit 10 black numbers in a row?
+* Reflection question:  Is there any behavior you could add to the roulette simulator that would improve it?  If so do it and build a portfolio project that shows your enhancement.
 
-Used as the base and customized in the following Duke MLOps and Applied Data Engineering Coursera Labs:
-
-* [MLOPs-C2-Lab1-CICD](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-1-CICD)
-* [MLOps-C2-Lab2-PokerSimulator](https://github.com/nogibjj/Coursera-MLOPs-Foundations-Lab-2-poker-simulator)
-* [MLOps-C2-Final-HuggingFace](https://github.com/nogibjj/Coursera-MLOps-C2-Final-HuggingFace)
 
 ### References
 
-* [Building Cloud Computing Solutions at Scale Specialization](https://www.coursera.org/specializations/building-cloud-computing-solutions-at-scale)
-* [Python, Bash and SQL Essentials for Data Engineering Specialization](https://www.coursera.org/learn/web-app-command-line-tools-for-data-engineering-duke)
-* [Coursera-Dockerfile](https://gist.github.com/noahgift/82a34d56f0a8f347865baaa685d5e98d)
+* [Coursera-MLOps-C2-lab3-probability-simulations](https://github.com/nogibjj/Coursera-MLOps-C2-lab3-probability-simulations)
